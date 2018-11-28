@@ -1,2 +1,3 @@
 # algorithmInJS
-Record the algorithms commonly used by Node.js
+
+Encapsulate the collection of commonly used algorithms for node.js
