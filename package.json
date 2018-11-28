@@ -1,0 +1,36 @@
+{
+  "name": "algorithminjs",
+  "version": "1.0.0",
+  "description": "Encapsulate the collection of commonly used algorithms for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaomiwujiecao/algorithmInJS.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "algorithm"
+  ],
+  "author": "reverse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaomiwujiecao/algorithmInJS/issues"
+  },
+  "homepage": "https://github.com/xiaomiwujiecao/algorithmInJS#readme",
+  "dependencies": {
+    "async": "^2.6.1",
+    "q": "^1.5.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^5.0.0-alpha.3",
+    "mocha": "^5.2.0",
+    "typescript": "^3.1.6"
+  }
+}
