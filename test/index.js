@@ -1,3 +1,4 @@
+
 let assert = require('chai').assert
 let should = require('chai').should()
 let expect = require('chai').expect
@@ -31,7 +32,7 @@ describe('algorithmInJs test:', function () {
 		let {SyncPromise} = require('../dist/lib/SyncPromise')
 		let syncPromise = new SyncPromise()
 		console.log(syncPromise)
-		var self = this
+		let self = this
 		const a = (option) => {
 			return new Promise((resolve, reject) => {
 					console.log(option)
@@ -40,7 +41,7 @@ describe('algorithmInJs test:', function () {
 			)
 		}
 
-		var ids = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+		let ids = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 		function method(option) {
 			return (callback) => {
@@ -50,7 +51,7 @@ describe('algorithmInJs test:', function () {
 			}
 		}
 
-		var arrayOfCallback = ids.map(id => {
+		let arrayOfCallback = ids.map(id => {
 			return method(id)
 		})
 		syncPromise.seriesOfArray(arrayOfCallback)
@@ -58,8 +59,33 @@ describe('algorithmInJs test:', function () {
 		done()
 	})
 	it('require this package should be done ', (done) => {
-		let {SyncPromise} = require('../dist')
-		console.log(SyncPromise)
+		let all = require('../index')
+
+		console.log('all:',  all)
+
+		done()
+	})
+	it('ArrayQueue should be ok  ', (done) => {
+		let {ArrayQueue} = require('../index')
+		let arrayQueue = new ArrayQueue(8)
+		//enqueue
+		console.log('enqueue::',arrayQueue.enqueue('a'))
+		console.log('arrayQueue:',  arrayQueue)
+		console.log('enqueue::',arrayQueue.enqueue('b'))
+		console.log('arrayQueue:',  arrayQueue)
+		// dequeue
+		console.log('dequeue:',  arrayQueue.dequeue())
+		console.log('dequeue show :',  arrayQueue)
+		done()
+	})
+
+	it('CircleQueue should be ok  ', (done) => {
+		let {CircleQueue} = require('../index')
+		let circleQueue = new CircleQueue(8)
+		console.log('circleQueue:',  circleQueue.enqueue('jame'))
+		console.log('circleQueue:',  circleQueue.enqueue('tom'))
+		console.log('circleQueue:',  circleQueue.enqueue('jerry'))
+		console.log('circleQueue:',  circleQueue)
 		done()
 	})
 })

@@ -1,10 +1,13 @@
 import {LinkedList} from './LinkedList'
 import {ArrayStack} from './ArrayStack'
 import {SyncPromise} from './SyncPromise'
+import {ArrayQueue} from './ArrayQueue'
+import {CircleQueue} from './CircleQueue'
 export default {
-	version:'1.0.0',
     LinkedList,
     ArrayStack,
     SyncPromise,
+    ArrayQueue,
+    CircleQueue,
 }
 
