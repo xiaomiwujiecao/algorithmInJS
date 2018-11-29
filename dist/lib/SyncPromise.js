@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const async = require("async");
-const Q = require("q");
-class SyncPromise {
-    constructor(arrayOfCallback) {
+var async = require('async');
+var Q = require('q');
+var SyncPromise = /** @class */ (function () {
+    function SyncPromise(arrayOfCallback) {
         this.arrayOfCallback = arrayOfCallback;
     }
     /*
@@ -18,8 +18,8 @@ class SyncPromise {
             })
         }
     }*/
-    seriesOfArray(arrayOfCallback) {
-        const deferred = Q.defer();
+    SyncPromise.prototype.seriesOfArray = function (arrayOfCallback) {
+        var deferred = Q.defer();
         async.series(arrayOfCallback, function (err, results) {
             if (err) {
                 deferred.reject(err);
@@ -30,9 +30,9 @@ class SyncPromise {
             }
         });
         return deferred.promise;
-    }
-    seriesOfObject(arrayOfCallback) {
-        const deferred = Q.defer();
+    };
+    SyncPromise.prototype.seriesOfObject = function (arrayOfCallback) {
+        var deferred = Q.defer();
         async.series(arrayOfCallback, function (err, results) {
             if (err) {
                 deferred.reject(err);
@@ -43,6 +43,7 @@ class SyncPromise {
             }
         });
         return deferred.promise;
-    }
-}
+    };
+    return SyncPromise;
+}());
 exports.SyncPromise = SyncPromise;

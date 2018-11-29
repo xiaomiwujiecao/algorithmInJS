@@ -17,7 +17,6 @@
     "algorithm",
     "algorithmInJS",
     "algorithm in js"
-
   ],
   "author": "reverse",
   "license": "ISC",
@@ -31,6 +30,7 @@
   },
   "devDependencies": {
     "@types/async": "^2.0.50",
+    "@types/node": "^10.12.10",
     "@types/q": "^1.5.1",
     "chai": "^4.2.0",
     "gulp": "^3.9.1",

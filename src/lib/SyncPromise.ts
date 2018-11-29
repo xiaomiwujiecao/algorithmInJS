@@ -1,5 +1,6 @@
-import * as async from 'async'
-import * as Q from 'q'
+
+const async = require('async')
+const Q = require('q')
 
 export class SyncPromise {
     arrayOfCallback: any
@@ -23,7 +24,7 @@ export class SyncPromise {
     public seriesOfArray(arrayOfCallback: any): any {
         const deferred = Q.defer()
         async.series(arrayOfCallback,
-            function (err, results) {
+            function (err:any, results:any) {
                 if (err) {
                     deferred.reject(err)
                     return
@@ -38,7 +39,7 @@ export class SyncPromise {
     public seriesOfObject(arrayOfCallback: any): any {
         const deferred = Q.defer()
         async.series(arrayOfCallback,
-            function (err, results) {
+            function (err:any, results:any) {
                 if (err) {
                     deferred.reject(err)
                     return

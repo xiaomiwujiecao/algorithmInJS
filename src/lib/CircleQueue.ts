@@ -11,7 +11,7 @@ export class CircleQueue {
 
     public enqueue(item: string) {
         let condition = (this.tail + 1) % this.n == this.head
-        if (condition) return false
+        if (condition) {return false}
         this.items[this.tail] = item
         this.tail = (this.tail + 1) % this.n
         return true

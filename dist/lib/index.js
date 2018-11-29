@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const LinkedList_1 = require("./LinkedList");
-const ArrayStack_1 = require("./ArrayStack");
-const SyncPromise_1 = require("./SyncPromise");
-const ArrayQueue_1 = require("./ArrayQueue");
-const CircleQueue_1 = require("./CircleQueue");
+var LinkedList_1 = require("./LinkedList");
+var ArrayStack_1 = require("./ArrayStack");
+var SyncPromise_1 = require("./SyncPromise");
+var ArrayQueue_1 = require("./ArrayQueue");
+var CircleQueue_1 = require("./CircleQueue");
 exports.default = {
     LinkedList: LinkedList_1.LinkedList,
     ArrayStack: ArrayStack_1.ArrayStack,
