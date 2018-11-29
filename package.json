@@ -27,10 +27,13 @@
     "q": "^1.5.1"
   },
   "devDependencies": {
+    "@types/async": "^2.0.50",
+    "@types/q": "^1.5.1",
     "chai": "^4.2.0",
     "gulp": "^3.9.1",
     "gulp-typescript": "^5.0.0-alpha.3",
     "mocha": "^5.2.0",
-    "typescript": "^3.1.6"
+    "typescript": "^3.1.6",
+    "typings": "^2.1.1"
   }
 }
