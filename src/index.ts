@@ -1,3 +1,2 @@
-import { sayHello } from "./greet";
-
-console.log(sayHello("reserse"));
+import * as algorithmInJS  from "./lib/index";
+export default algorithmInJS.default

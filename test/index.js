@@ -4,7 +4,7 @@ let expect = require('chai').expect
 describe('algorithmInJs test:', function () {
 	this.timeout(3000);
 	// test linkedList
-	it('LinkedList should output the key ', function (done) {
+	it('LinkedList should output the key ', (done) => {
 		let {LinkedList} = require('../dist/lib/LinkedList')
 
 		let a = [4, 2, 3, 5, 9, 6]
@@ -18,7 +18,7 @@ describe('algorithmInJs test:', function () {
 		done()
 	})
 	// test arrayStack
-	it('ArrayStack should be ok ', function (done) {
+	it('ArrayStack should be ok ', (done) => {
 		let {ArrayStack} = require('../dist/lib/ArrayStack')
 		let arrayStack = new ArrayStack(5)
 		console.log(arrayStack.push(4))
@@ -27,7 +27,7 @@ describe('algorithmInJs test:', function () {
 		done()
 	})
 
-	it('SyncPromise should be ok ', function (done) {
+	it('SyncPromise should be ok ', (done) => {
 		let {SyncPromise} = require('../dist/lib/SyncPromise')
 		let syncPromise = new SyncPromise()
 		console.log(syncPromise)
@@ -55,6 +55,11 @@ describe('algorithmInJs test:', function () {
 		})
 		syncPromise.seriesOfArray(arrayOfCallback)
 		expect(arrayOfCallback).to.be.a('array')
+		done()
+	})
+	it('require this package should be done ', (done) => {
+		let {SyncPromise} = require('../dist')
+		console.log(SyncPromise)
 		done()
 	})
 })

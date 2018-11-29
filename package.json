@@ -4,8 +4,8 @@
   "description": "Encapsulate the collection of commonly used algorithms for node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development"
+    "build": "gulp",
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
