@@ -4,6 +4,9 @@ import {SyncPromise} from './SyncPromise'
 import {ArrayQueue} from './ArrayQueue'
 import {CircleQueue} from './CircleQueue'
 import {Sort} from './Sort'
+import {MergeSort} from './MergeSort'
+import {Util} from './Util'
+import {QuickSort} from './QuickSort'
 
 export default {
   LinkedList,
@@ -12,5 +15,8 @@ export default {
   ArrayQueue,
   CircleQueue,
   Sort,
+  MergeSort,
+  Util,
+  QuickSort,
 }
 

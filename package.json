@@ -26,6 +26,7 @@
   "homepage": "https://github.com/xiaomiwujiecao/algorithmInJS#readme",
   "dependencies": {
     "async": "^2.6.1",
+    "mathjs": "^5.3.0",
     "q": "^1.5.1"
   },
   "devDependencies": {

@@ -6,6 +6,9 @@ var SyncPromise_1 = require("./SyncPromise");
 var ArrayQueue_1 = require("./ArrayQueue");
 var CircleQueue_1 = require("./CircleQueue");
 var Sort_1 = require("./Sort");
+var MergeSort_1 = require("./MergeSort");
+var Util_1 = require("./Util");
+var QuickSort_1 = require("./QuickSort");
 exports.default = {
     LinkedList: LinkedList_1.LinkedList,
     ArrayStack: ArrayStack_1.ArrayStack,
@@ -13,4 +16,7 @@ exports.default = {
     ArrayQueue: ArrayQueue_1.ArrayQueue,
     CircleQueue: CircleQueue_1.CircleQueue,
     Sort: Sort_1.Sort,
+    MergeSort: MergeSort_1.MergeSort,
+    Util: Util_1.Util,
+    QuickSort: QuickSort_1.QuickSort,
 };
