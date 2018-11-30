@@ -8,6 +8,7 @@ import {MergeSort} from './MergeSort'
 import {Util} from './Util'
 import {QuickSort} from './QuickSort'
 import {CountingSort} from './CountingSort'
+import {BinarySearch} from './BinarySearch'
 
 export default {
   LinkedList,
@@ -20,5 +21,6 @@ export default {
   Util,
   QuickSort,
   CountingSort,
+  BinarySearch,
 }
 

@@ -10,6 +10,7 @@ var MergeSort_1 = require("./MergeSort");
 var Util_1 = require("./Util");
 var QuickSort_1 = require("./QuickSort");
 var CountingSort_1 = require("./CountingSort");
+var BinarySearch_1 = require("./BinarySearch");
 exports.default = {
     LinkedList: LinkedList_1.LinkedList,
     ArrayStack: ArrayStack_1.ArrayStack,
@@ -21,4 +22,5 @@ exports.default = {
     Util: Util_1.Util,
     QuickSort: QuickSort_1.QuickSort,
     CountingSort: CountingSort_1.CountingSort,
+    BinarySearch: BinarySearch_1.BinarySearch,
 };
