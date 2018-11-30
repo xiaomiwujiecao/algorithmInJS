@@ -7,6 +7,7 @@ import {Sort} from './Sort'
 import {MergeSort} from './MergeSort'
 import {Util} from './Util'
 import {QuickSort} from './QuickSort'
+import {CountingSort} from './CountingSort'
 
 export default {
   LinkedList,
@@ -18,5 +19,6 @@ export default {
   MergeSort,
   Util,
   QuickSort,
+  CountingSort,
 }
 
