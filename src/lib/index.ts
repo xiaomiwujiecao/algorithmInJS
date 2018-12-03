@@ -9,6 +9,7 @@ import {Util} from './Util'
 import {QuickSort} from './QuickSort'
 import {CountingSort} from './CountingSort'
 import {BinarySearch} from './BinarySearch'
+import {Nodes} from './Nodes'
 
 export default {
   LinkedList,
@@ -22,5 +23,6 @@ export default {
   QuickSort,
   CountingSort,
   BinarySearch,
+  Nodes,
 }
 
