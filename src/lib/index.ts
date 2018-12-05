@@ -10,6 +10,7 @@ import {QuickSort} from './QuickSort'
 import {CountingSort} from './CountingSort'
 import {BinarySearch} from './BinarySearch'
 import {Nodes} from './Nodes'
+import {Heap} from './Heap'
 
 export default {
   LinkedList,
@@ -24,5 +25,6 @@ export default {
   CountingSort,
   BinarySearch,
   Nodes,
+  Heap,
 }
 

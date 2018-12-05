@@ -12,6 +12,7 @@ var QuickSort_1 = require("./QuickSort");
 var CountingSort_1 = require("./CountingSort");
 var BinarySearch_1 = require("./BinarySearch");
 var Nodes_1 = require("./Nodes");
+var Heap_1 = require("./Heap");
 exports.default = {
     LinkedList: LinkedList_1.LinkedList,
     ArrayStack: ArrayStack_1.ArrayStack,
@@ -25,4 +26,5 @@ exports.default = {
     CountingSort: CountingSort_1.CountingSort,
     BinarySearch: BinarySearch_1.BinarySearch,
     Nodes: Nodes_1.Nodes,
+    Heap: Heap_1.Heap,
 };
