@@ -1,6 +1,6 @@
 {
   "name": "algorithminjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Encapsulate the collection of commonly used algorithms for node.js",
   "main": "index.js",
   "scripts": {
