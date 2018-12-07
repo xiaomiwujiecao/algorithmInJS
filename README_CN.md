@@ -11,7 +11,7 @@
 
 > 使用  ArrayQueue.ts
 
-```
+```TypeScript
 let {ArrayQueue} = require('../index')
 		let arrayQueue = new ArrayQueue(8)
 		//enqueue
@@ -27,7 +27,7 @@ let {ArrayQueue} = require('../index')
 
 > 使用 ArrayStack.ts
 
-```
+```TypeScript
 let {ArrayStack} = require('../dist/lib/ArrayStack')
 		let arrayStack = new ArrayStack(5)
 		console.log(arrayStack.push(4))
@@ -50,7 +50,7 @@ let {BinarySearch} = require('../index')
 
 > 使用 CircleQueue.ts
 
-```
+```TypeScript
 let {CircleQueue} = require('../index')
 		let circleQueue = new CircleQueue(8)
 		console.log('circleQueue:',  circleQueue.enqueue('jame'))
@@ -61,7 +61,7 @@ let {CircleQueue} = require('../index')
 
 > 使用 CountingSort.ts
 
-```
+```TypeScript
 let {CountingSort} = require('../index')
 		// let mergeSort = new MergeSort()
 		var a = [11,10,9,8,7,6,5,4,3,2,1]
@@ -83,7 +83,7 @@ let {CountingSort} = require('../index')
 
 > 使用 MergeSort.ts
 
-```
+```TypeScript
 let {MergeSort} = require('../index')
 		// let mergeSort = new MergeSort()
 		var a = [1, 23, 45, 56, 2, 3, 34, 22]
@@ -97,7 +97,7 @@ let {MergeSort} = require('../index')
 
 > 使用 Nodes.ts
 
-```
+```TypeScript
 let {Nodes} = require('../index')
 		var node1 = new Nodes(5)
 		node1.insert(2)
@@ -113,7 +113,7 @@ let {Nodes} = require('../index')
 
 > 使用 QuickSort.ts
 
-```
+```TypeScript
 let {QuickSort} = require('../index')
 		// let mergeSort = new MergeSort()
 		var a = [11,10,9,8,7,6,5,4,3,2,1]
@@ -127,7 +127,7 @@ let {QuickSort} = require('../index')
 
 > 使用 SyncPromise.ts
 
-```
+```TypeScript
 let {SyncPromise} = require('../dist/lib/SyncPromise')
 		let syncPromise = new SyncPromise()
 		console.log(syncPromise)
@@ -159,7 +159,7 @@ let {SyncPromise} = require('../dist/lib/SyncPromise')
 
 > 使用 Util.ts
 
-```
+```TypeScript
 let {Util} = require('../index')
 		let testUrl = 'https://translate.google.com/?view=home&op=translate&sl=en&tl=zh-CN&text=what%20i%20want%20to%20do%20is%20that'
 		let getJSON = Util.url2json(testUrl)
@@ -168,7 +168,7 @@ let {Util} = require('../index')
 ```
 
 
-```
+```TypeScript
 let {Util} = require('../index')
 		let testObj = {
 			view: 'home',
@@ -180,4 +180,3 @@ let {Util} = require('../index')
 		let getUrl = Util.json2url(testObj)
 		console.log('getUrl::',getUrl)
 ```
-
