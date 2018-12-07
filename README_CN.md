@@ -1,3 +1,4 @@
+[![Travis (.org)](https://img.shields.io/travis/xiaomiwujiecao/algorithmInJS.svg)](https://travis-ci.org/xiaomiwujiecao/algorithmInJS)
 ＃algorithmInJS
 
 - 封装node.js常用算法的集合
