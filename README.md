@@ -40,7 +40,7 @@ let {ArrayQueue} = require('../index')
 > use ArrayStack.ts
 
 ```TypeScript
-let {ArrayStack} = require('../dist/lib/ArrayStack')
+let {ArrayStack} = require('../index')
 		let arrayStack = new ArrayStack(5)
 		console.log(arrayStack.push(4))
 		console.log(arrayStack.items)
@@ -140,7 +140,7 @@ let {QuickSort} = require('../index')
 > use SyncPromise.ts
 
 ```TypeScript
-let {SyncPromise} = require('../dist/lib/SyncPromise')
+let {SyncPromise} = require('../index')
 		let syncPromise = new SyncPromise()
 		console.log(syncPromise)
 		let self = this

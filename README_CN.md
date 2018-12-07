@@ -28,7 +28,7 @@ let {ArrayQueue} = require('../index')
 > 使用 ArrayStack.ts
 
 ```TypeScript
-let {ArrayStack} = require('../dist/lib/ArrayStack')
+let {ArrayStack} = require('../index')
 		let arrayStack = new ArrayStack(5)
 		console.log(arrayStack.push(4))
 		console.log(arrayStack.items)
@@ -37,7 +37,7 @@ let {ArrayStack} = require('../dist/lib/ArrayStack')
 
 > 使用 BinarySearch.ts
 
-```
+```TypeScript
 let {BinarySearch} = require('../index')
 		let a = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1].reverse()
 		let n = a.length
@@ -128,7 +128,7 @@ let {QuickSort} = require('../index')
 > 使用 SyncPromise.ts
 
 ```TypeScript
-let {SyncPromise} = require('../dist/lib/SyncPromise')
+let {SyncPromise} = require('../index')
 		let syncPromise = new SyncPromise()
 		console.log(syncPromise)
 		let self = this
