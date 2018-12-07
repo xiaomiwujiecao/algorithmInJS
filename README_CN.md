@@ -21,6 +21,16 @@
 npm i  algorithminjs -D
 
 ```
+在node中使用
+
+```javascript
+let algorithminjs = require(algorithminjs)
+
+ // import 形式
+import algorithmInJS from 'algorithminjs'
+
+```
+
 
 ### 文档：
 
