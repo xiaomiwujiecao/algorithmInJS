@@ -13,6 +13,7 @@
 - 本库采用MIT协议，欢迎提交 pull Request
 
 
+
 ## 开始使用
 
 - 如果想使用npm包的形式使用并测试
@@ -35,7 +36,7 @@ import algorithmInJS from 'algorithminjs'
 ### 文档：
 
 
-> 使用  ArrayQueue.ts
+> 使用  ArrayQueue.ts    数组队列
 
 ```TypeScript
 let {ArrayQueue} = require('../index')
@@ -51,7 +52,7 @@ let {ArrayQueue} = require('../index')
 ```
 
 
-> 使用 ArrayStack.ts
+> 使用 ArrayStack.ts  数组堆栈
 
 ```TypeScript
 let {ArrayStack} = require('../index')
@@ -61,7 +62,7 @@ let {ArrayStack} = require('../index')
 		expect(arrayStack.items).to.be.a('array')
 ```
 
-> 使用 BinarySearch.ts
+> 使用 BinarySearch.ts  二分查找法
 
 ```TypeScript
 let {BinarySearch} = require('../index')
@@ -74,7 +75,7 @@ let {BinarySearch} = require('../index')
 		console.log('result:', result)
 ```
 
-> 使用 CircleQueue.ts
+> 使用 CircleQueue.ts  循环队列
 
 ```TypeScript
 let {CircleQueue} = require('../index')
@@ -85,7 +86,7 @@ let {CircleQueue} = require('../index')
 		console.log('circleQueue:',  circleQueue)
 ```
 
-> 使用 CountingSort.ts
+> 使用 CountingSort.ts  计数排序
 
 ```TypeScript
 let {CountingSort} = require('../index')
@@ -100,14 +101,14 @@ let {CountingSort} = require('../index')
 ```
 
 
-> 使用 Heap.ts
+> 使用 Heap.ts  堆算法的实现
 
 ```
 
 
 ```
 
-> 使用 MergeSort.ts
+> 使用 MergeSort.ts  合并排序算法
 
 ```TypeScript
 let {MergeSort} = require('../index')
@@ -121,7 +122,7 @@ let {MergeSort} = require('../index')
 		console.log('array:', a)
 ```
 
-> 使用 Nodes.ts
+> 使用 Nodes.ts   二叉树节点算法实现
 
 ```TypeScript
 let {Nodes} = require('../index')
@@ -137,7 +138,7 @@ let {Nodes} = require('../index')
 		console.log('deleted::',node1)
 ```
 
-> 使用 QuickSort.ts
+> 使用 QuickSort.ts  快速排序算法实现
 
 ```TypeScript
 let {QuickSort} = require('../index')
@@ -151,7 +152,7 @@ let {QuickSort} = require('../index')
 		console.log('array:', a)
 ```
 
-> 使用 SyncPromise.ts
+> 使用 SyncPromise.ts   异步逻辑同步队列算法实现
 
 ```TypeScript
 let {SyncPromise} = require('../index')
@@ -183,7 +184,7 @@ let {SyncPromise} = require('../index')
 		expect(arrayOfCallback).to.be.a('array')
 ```
 
-> 使用 Util.ts
+> 使用 Util.ts  帮助函数
 
 ```TypeScript
 let {Util} = require('../index')

@@ -1,19 +1,8 @@
+#algorithmInJS
 
+- A collection of commonly used algorithms for encapsulating node.js
 
-[![Travis (.org)](https://img.shields.io/travis/xiaomiwujiecao/algorithmInJS.svg)](https://travis-ci.org/xiaomiwujiecao/algorithmInJS)
-
-
-
-# algorithmInJS
-
-- Encapsulate the collection of commonly used algorithms for node.js
-
-- write with TypeScript, for easy to write fluency code
-
-## start usage :
-
-
-
+- Written in TypeScript for easy writing of smooth code
 
 ## Description
 
@@ -22,6 +11,7 @@
 - This library is only suitable for self-learning and discussion, please do not use in production environment
 
 - This library uses the MIT protocol, welcome to submit a pull Request
+
 
 
 ## start using
@@ -37,182 +27,183 @@ Used in node
 ```javascript
 Let algorithminjs = require(algorithminjs)
 
-  // import form
+ // import form
 Import algorithmInJS from 'algorithminjs'
 
 ```
 
-### documentation:[中文文档](./README_CN.md)
+
+### Document:
 
 
-> use  ArrayQueue.ts
-
-```TypeScript
-let {ArrayQueue} = require('../index')
-		let arrayQueue = new ArrayQueue(8)
-		//enqueue
-		console.log('enqueue::', arrayQueue.enqueue('a'))
-		console.log('arrayQueue:', arrayQueue)
-		console.log('enqueue::', arrayQueue.enqueue('b'))
-		console.log('arrayQueue:', arrayQueue)
-		// dequeue
-		console.log('dequeue:', arrayQueue.dequeue())
-		console.log('dequeue show :', arrayQueue)
-```
-
-
-> use ArrayStack.ts
+> Using ArrayQueue.ts array queue
 
 ```TypeScript
-let {ArrayStack} = require('../index')
-		let arrayStack = new ArrayStack(5)
-		console.log(arrayStack.push(4))
-		console.log(arrayStack.items)
-		expect(arrayStack.items).to.be.a('array')
+Let {ArrayQueue} = require('../index')
+Let arrayQueue = new ArrayQueue(8)
+//enqueue
+Console.log('enqueue::', arrayQueue.enqueue('a'))
+Console.log('arrayQueue:', arrayQueue)
+Console.log('enqueue::', arrayQueue.enqueue('b'))
+Console.log('arrayQueue:', arrayQueue)
+// dequeue
+Console.log('dequeue:', arrayQueue.dequeue())
+Console.log('dequeue show :', arrayQueue)
 ```
 
-> use BinarySearch.ts
+
+> Using ArrayStack.ts array stack
 
 ```TypeScript
-let {BinarySearch} = require('../index')
-		let a = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1].reverse()
-		let n = a.length
-		let val = 8
-		let bs = new BinarySearch()
-		console.log('bs', bs)
-		let result = bs.bsearchInternally(a, 0, n - 1, val)
-		console.log('result:', result)
+Let {ArrayStack} = require('../index')
+Let arrayStack = new ArrayStack(5)
+Console.log(arrayStack.push(4))
+Console.log(arrayStack.items)
+Expect(arrayStack.items).to.be.a('array')
 ```
 
-> use CircleQueue.ts
+> Using BinarySearch.ts binary search
 
 ```TypeScript
-let {CircleQueue} = require('../index')
-		let circleQueue = new CircleQueue(8)
-		console.log('circleQueue:',  circleQueue.enqueue('jame'))
-		console.log('circleQueue:',  circleQueue.enqueue('tom'))
-		console.log('circleQueue:',  circleQueue.enqueue('jerry'))
-		console.log('circleQueue:',  circleQueue)
+Let {BinarySearch} = require('../index')
+Let a = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1].reverse()
+Let n = a.length
+Let val = 8
+Let bs = new BinarySearch()
+Console.log('bs', bs)
+Let result = bs.bsearchInternally(a, 0, n - 1, val)
+Console.log('result:', result)
 ```
 
-> use CountingSort.ts
+> Using CircleQueue.ts Loop Queue
 
 ```TypeScript
-let {CountingSort} = require('../index')
-		// let mergeSort = new MergeSort()
-		var a = [11,10,9,8,7,6,5,4,3,2,1]
-		var n = a.length
-		console.time('countingSort')
-		CountingSort.countingSort(a,n)
-		// quickSort.mergeSortInternally(a, 0)
-		console.timeEnd('countingSort')
-		console.log('array:', a)
+Let {CircleQueue} = require('../index')
+Let circleQueue = new CircleQueue(8)
+Console.log('circleQueue:', circleQueue.enqueue('jame'))
+Console.log('circleQueue:', circleQueue.enqueue('tom'))
+Console.log('circleQueue:', circleQueue.enqueue('jerry'))
+Console.log('circleQueue:', circleQueue)
 ```
 
-
-> use Heap.ts
-
-```
-
-
-```
-
-> use MergeSort.ts
+> Sorting by CountingSort.ts Count
 
 ```TypeScript
-let {MergeSort} = require('../index')
-		// let mergeSort = new MergeSort()
-		var a = [1, 23, 45, 56, 2, 3, 34, 22]
-		var n = a.length
-		console.time('mergeSort')
-		var mergeSort = new MergeSort(a, n)
-		mergeSort.mergeSortInternally(a, 0)
-		console.timeEnd('mergeSort')
-		console.log('array:', a)
-```
-
-> use Nodes.ts
-
-```TypeScript
-let {Nodes} = require('../index')
-		var node1 = new Nodes(5)
-		node1.insert(2)
-		node1.insert(4)
-		console.log(node1)
-
-		// delete
-		console.time('delete')
-		node1.delete(3)
-		console.timeEnd('delete')
-		console.log('deleted::',node1)
-```
-
-> use QuickSort.ts
-
-```TypeScript
-let {QuickSort} = require('../index')
-		// let mergeSort = new MergeSort()
-		var a = [11,10,9,8,7,6,5,4,3,2,1]
-		var n = a.length
-		console.time('mergeSort')
-		var quickSort = new QuickSort(a, n)
-		// quickSort.mergeSortInternally(a, 0)
-		console.timeEnd('mergeSort')
-		console.log('array:', a)
-```
-
-> use SyncPromise.ts
-
-```TypeScript
-let {SyncPromise} = require('../index')
-		let syncPromise = new SyncPromise()
-		console.log(syncPromise)
-		let self = this
-		const a = (option) => {
-			return new Promise((resolve, reject) => {
-					console.log(option)
-					resolve(option)
-				}
-			)
-		}
-
-		let ids = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-		function method(option) {
-			return (callback) => {
-				a(option).then(data => {
-					callback(null, data)
-				})
-			}
-		}
-
-		let arrayOfCallback = ids.map(id => {
-			return method(id)
-		})
-		syncPromise.seriesOfArray(arrayOfCallback)
-		expect(arrayOfCallback).to.be.a('array')
-```
-
-> use Util.ts
-
-```TypeScript
-let {Util} = require('../index')
-		let testUrl = 'https://translate.google.com/?view=home&op=translate&sl=en&tl=zh-CN&text=what%20i%20want%20to%20do%20is%20that'
-		let getJSON = Util.url2json(testUrl)
-		console.log("getJSON:",getJSON)
-		expect(getJSON).to.be.a('object')
+Let {CountingSort} = require('../index')
+// let mergeSort = new MergeSort()
+Var a = [11,10,9,8,7,6,5,4,3,2,1]
+Var n = a.length
+Console.time('countingSort')
+CountingSort.countingSort(a,n)
+// quickSort.mergeSortInternally(a, 0)
+console.timeEnd('countingSort')
+Console.log('array:', a)
 ```
 
 
+> Implementation using the Heap.ts heap algorithm
+
+```
+
+
+```
+
+> MergeSort.ts merge sort algorithm
+
 ```TypeScript
-let {Util} = require('../index')
-		let testObj = {
-			view: 'home',
-			op: 'translate',
-			sl: 'en',
-			tl: 'zh-CN',
-			text: 'what i want to do is that'
-		}
-		let getUrl = Util.json2url(testObj)
-		console.log('getUrl::',getUrl)
+Let {MergeSort} = require('../index')
+// let mergeSort = new MergeSort()
+Var a = [1, 23, 45, 56, 2, 3, 34, 22]
+Var n = a.length
+Console.time('mergeSort')
+Var mergeSort = new MergeSort(a, n)
+mergeSort.mergeSortInternally(a, 0)
+console.timeEnd('mergeSort')
+Console.log('array:', a)
+```
+
+> Implemented using the Nodes.ts binary tree node algorithm
+
+```TypeScript
+Let {Nodes} = require('../index')
+Var node1 = new Nodes(5)
+Node1.insert(2)
+Node1.insert(4)
+Console.log(node1)
+
+// delete
+Console.time('delete')
+Node1.delete(3)
+console.timeEnd('delete')
+Console.log('deleted::',node1)
+```
+
+> Implemented using the QuickSort.ts quick sort algorithm
+
+```TypeScript
+Let {QuickSort} = require('../index')
+// let mergeSort = new MergeSort()
+Var a = [11,10,9,8,7,6,5,4,3,2,1]
+Var n = a.length
+Console.time('mergeSort')
+Var quickSort = new QuickSort(a, n)
+// quickSort.mergeSortInternally(a, 0)
+console.timeEnd('mergeSort')
+Console.log('array:', a)
+```
+
+> Implemented with SyncPromise.ts asynchronous logic synchronous queue algorithm
+
+```TypeScript
+Let {SyncPromise} = require('../index')
+Let syncPromise = new SyncPromise()
+Console.log(syncPromise)
+Let self = this
+Const a = (option) => {
+Return new Promise((resolve, reject) => {
+Console.log(option)
+Resolve(option)
+}
+)
+}
+
+Let ids = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Function method(option) {
+Return (callback) => {
+a(option).then(data => {
+Callback(null, data)
+})
+}
+}
+
+Let arrayOfCallback = ids.map(id => {
+Return method(id)
+})
+syncPromise.seriesOfArray(arrayOfCallback)
+Expect(arrayOfCallback).to.be.a('array')
+```
+
+> Using the Util.ts helper function
+
+```TypeScript
+Let {Util} = require('../index')
+Let testUrl = 'https://translate.google.com/?view=home&op=translate&sl=en&tl=zh-CN&text=what%20i%20want%20to%20do%20is%20that'
+Let getJSON = Util.url2json(testUrl)
+Console.log("getJSON:",getJSON)
+Expect(getJSON).to.be.a('object')
+```
+
+
+```TypeScript
+Let {Util} = require('../index')
+Let testObj = {
+View: 'home',
+Op: 'translate',
+Sl: 'en',
+Tl: 'zh-CN',
+Text: 'what i want to do is that'
+}
+Let getUrl = Util.json2url(testObj)
+Console.log('getUrl::',getUrl)
 ```
