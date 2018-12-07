@@ -12,13 +12,37 @@
 
 ## start usage :
 
-###  
-
-[中文文档](./README_CN.md)
 
 
 
-### documentation:
+## Description
+
+- Long-term maintenance of the library, in order to achieve a variety of more common algorithms, but also to witness the charm of JS
+
+- This library is only suitable for self-learning and discussion, please do not use in production environment
+
+- This library uses the MIT protocol, welcome to submit a pull Request
+
+
+## start using
+
+- If you want to use and test in the form of npm package
+
+```
+Npm i algorithminjs -D
+
+```
+Used in node
+
+```javascript
+Let algorithminjs = require(algorithminjs)
+
+  // import form
+Import algorithmInJS from 'algorithminjs'
+
+```
+
+### documentation:[中文文档](./README_CN.md)
 
 
 > use  ArrayQueue.ts
