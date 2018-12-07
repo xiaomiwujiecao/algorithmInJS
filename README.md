@@ -1,4 +1,10 @@
-#algorithmInJS
+
+
+[![Travis (.org)](https://img.shields.io/travis/xiaomiwujiecao/algorithmInJS.svg)](https://travis-ci.org/xiaomiwujiecao/algorithmInJS)
+
+
+
+# algorithmInJS
 
 - A collection of commonly used algorithms for encapsulating node.js
 
