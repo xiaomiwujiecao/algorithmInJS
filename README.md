@@ -31,7 +31,7 @@ Npm i algorithminjs -D
 Used in node
 
 ```javascript
-Let algorithminjs = require(algorithminjs)
+Let algorithminjs = require('algorithminjs')
 
  // import form
 Import algorithmInJS from 'algorithminjs'
@@ -39,7 +39,7 @@ Import algorithmInJS from 'algorithminjs'
 ```
 
 
-### Document:
+### Document ( [中文](./README_CN.md))
 
 
 > Using ArrayQueue.ts array queue
