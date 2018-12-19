@@ -65,7 +65,7 @@ let {ArrayStack} = require('../index')
 let arrayStack = new ArrayStack(5)
 console.log(arrayStack.push(4))
 console.log(arrayStack.items)
-Expect(arrayStack.items).to.be.a('array')
+expect(arrayStack.items).to.be.a('array')
 ```
 
 > Using BinarySearch.ts binary search
@@ -187,7 +187,7 @@ let arrayOfCallback = ids.map(id => {
 Return method(id)
 })
 syncPromise.seriesOfArray(arrayOfCallback)
-Expect(arrayOfCallback).to.be.a('array')
+expect(arrayOfCallback).to.be.a('array')
 ```
 
 > Using the Util.ts helper function
@@ -197,7 +197,7 @@ let {Util} = require('../index')
 let testUrl = 'https://translate.google.com/?view=home&op=translate&sl=en&tl=zh-CN&text=what%20i%20want%20to%20do%20is%20that'
 let getJSON = Util.url2json(testUrl)
 console.log("getJSON:",getJSON)
-Expect(getJSON).to.be.a('object')
+expect(getJSON).to.be.a('object')
 ```
 
 
